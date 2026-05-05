@@ -60,9 +60,9 @@
   for $i\in[1,n_t]$ for $n_t$ triangles in space, $j\in[1,n_a]$ for $n_a$ elements in solid angle.
   Inserting \cref{eq:function-approx} into \cref{eq:weak-form} and combining summations gives:
   \begin{multline}\label{eq:function-exp-fem}
-    \pm\int_{\mathcal{A}}\oint_{\partial\tau}v\sum_i\sum_j \psi_{ij}T_iA_j\left(\mu n_x+\eta n_y\right)\dd s\dd\ohat +\\+
-    \frac{1}{\sigt}\intelems \left(\sum_i\left(\mu\pdv{T_i}{x}+\eta\pdv{T_i}{y}\right)\sum_jA_j\psi_{ij}\right)\left(\mu\pdv{v}{x}+\eta\pdv{v}{y}\right)\elemdifs+\\+
-    \sigt\intelems v\sum_i T_i \sum_jA_j \psi_{ij}\elemdifs = \intelems vS\elemdifs
+    \pm\int_{\mathcal{A}}\oint_{\partial\tau}v\sum_{i,j} \psi_{ij}T_iA_j\left(\mu n_x+\eta n_y\right)\dd s\dd\ohat +\\+
+    \frac{1}{\sigt}\intelems \left(\sum_{i,j}\left(\mu\pdv{T_i}{x}+\eta\pdv{T_i}{y}\right)A_j\psi_{ij}\right)\left(\mu\pdv{v}{x}+\eta\pdv{v}{y}\right)\elemdifs+\\+
+    \sigt\intelems v\sum_{i,j} T_i A_j \psi_{ij}\elemdifs = \intelems vS\elemdifs
   \end{multline}
 \end{frame}
 
