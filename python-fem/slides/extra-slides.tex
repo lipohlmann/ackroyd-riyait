@@ -30,9 +30,9 @@
   \begin{equation}\label{eq:inscatter-xs-evaluated}
     \begin{split}
       \Sigma_{s,m}\left(\rvec\right) & = 2\pi \int_{-1}^{1}\Sigma_s \left(\rvec,\mu_0\right)P_m \left(\mu_0\right)\dd \mu_0       \\
-      & =2\pi \int_{-1}^{1}\frac{\Sigma_s\left(\rvec\right)}{4\pi} P_m \left(\mu_0\right)\dd \mu_0 \\
-      & =\frac{\Sigma_s\left(\rvec\right)}{2}\int_{-1}^{1} P_m \left(\mu_0\right)\dd \mu_0         \\
-      & =\Sigma_s\left(\rvec\right) \delta_{0m}
+                                     & =2\pi \int_{-1}^{1}\frac{\Sigma_s\left(\rvec\right)}{4\pi} P_m \left(\mu_0\right)\dd \mu_0 \\
+                                     & =\frac{\Sigma_s\left(\rvec\right)}{2}\int_{-1}^{1} P_m \left(\mu_0\right)\dd \mu_0         \\
+                                     & =\Sigma_s\left(\rvec\right) \delta_{0m}
     \end{split}
   \end{equation}
   where, in the last line, the orthogonality of Legendre polynomials is applied.
@@ -55,4 +55,12 @@
     \phi\left(\rvec\right)\equiv \int_{4\pi}\psi \left(\rvec,\ohat\right) \dd \ohat
   \end{equation}
   \Cref{eq:scalar-flux} is know as the \textit{angle-integrated} (or \textit{scalar}) \textit{flux}.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Error Plot}
+  \begin{figure}
+    \includegraphics{figures/sphere/error.png}
+    \caption{Error}
+  \end{figure}
 \end{frame}
