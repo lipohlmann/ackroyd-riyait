@@ -19,9 +19,9 @@ Physical Curve("east", 15) = {9};
 Physical Curve("south", 16) = {10, 6, 12};
 
 // --- Mesh sizes ---
-size_material = 0.8;
-size_void   = 0.55;
-size_source = 0.3;
+size_material = 1.25;
+size_void   = 0.8;
+size_source = 0.4;
 
 MeshSize{ PointsOf{ Surface{5}; } } = size_material;
 MeshSize{ PointsOf{ Surface{4}; } } = size_void;
