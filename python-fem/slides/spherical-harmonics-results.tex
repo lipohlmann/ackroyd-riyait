@@ -11,24 +11,207 @@
     \centering
     \begin{subfigure}{0.45\textwidth}
       \centering
-      \includegraphics[width=0.65\textwidth]{figures/absorbing/cell_fluxes_256_8.png}
-      \subcaption{$N=256$}
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_256_disc.png}
+      \subcaption{Problem discretization}
     \end{subfigure}%
     \begin{subfigure}{0.45\textwidth}
       \centering
-      \includegraphics[width=0.65\textwidth]{figures/absorbing/cell_fluxes_1024_8.png}
-      \subcaption{$N=1024$}
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_256_p1.png}
+      \subcaption{$P_{1}$}
     \end{subfigure}
     \begin{subfigure}{0.45\textwidth}
       \centering
-      \includegraphics[width=0.65\textwidth]{figures/absorbing/cell_fluxes_4096_8.png}
-      \subcaption{$N=4096$}
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_256_p3.png}
+      \subcaption{$P_{3}$}
     \end{subfigure}%
     \begin{subfigure}{0.45\textwidth}
       \centering
-      \includegraphics[width=0.65\textwidth]{figures/absorbing/cell_fluxes_16384_8.png}
-      \subcaption{$N=16384$}
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_256_p5.png}
+      \subcaption{$P_{5}$}
     \end{subfigure}
-    \caption{Solution of absorbing \glspl{arp1} for varying $N$ with $S_{8}$.}
+    \caption{Solution of absorbing \glspl{arp1} for varying $P_N$ with $N=256$.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\glspl{arp1} Absorbing Medium Results}
+  \begin{figure}[b]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_1024_disc.png}
+      \subcaption{Problem discretization}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_1024_p1.png}
+      \subcaption{$P_{1}$}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_1024_p3.png}
+      \subcaption{$P_{3}$}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_1024_p5.png}
+      \subcaption{$P_{5}$}
+    \end{subfigure}
+    \caption{Solution of absorbing \glspl{arp1} for varying $P_N$ with $N=1024$.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\glspl{arp1} Absorbing Medium Results}
+  \begin{figure}[b]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_4096_disc.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_4096_p1.png}
+      \subcaption{$P_{1}$}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_4096_p3.png}
+      \subcaption{$P_{3}$}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_4096_p5.png}
+      \subcaption{$P_{5}$}
+    \end{subfigure}
+    \caption{Solution of absorbing \glspl{arp1} for varying $P_N$ with $N=4096$.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\glspl{arp1} Absorbing Medium Removal of Ray Effects}
+  \begin{figure}[b]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_org_log.png}
+      \subcaption{$N=16384$, $S_{8}$}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_4096_p5_log.png}
+      \subcaption{$N=4096$, $P_{5}$}
+    \end{subfigure}
+    \caption{Log scale of \glspl{arp1} problem highlighting ray effects.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\glspl{arp1} Comparison with Paper}
+  \begin{figure}[b]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/arp1_256_p1_diag.png}
+      \subcaption{$N=256$, $P_{1}$}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.55\textwidth]{figures/arp1_paper_result.png}
+      \subcaption{Flux along diagonal for three different solution techniques.}
+    \end{subfigure}%
+    \caption{Comparison of \glspl{arp1} solutions with original paper.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\glspl{arp} "Straight Duct" Problem}
+  \begin{figure}[b]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/duct_4096_disc.png}
+      \subcaption{Problem discretization}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/duct_4096_p1.png}
+      \subcaption{$P_{1}$}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/duct_4096_p3.png}
+      \subcaption{$P_{3}$}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/duct_4096_p5.png}
+      \subcaption{$P_{5}$}
+    \end{subfigure}
+    \caption{Solutions of \glspl{arp} duct problems for varying $P_N$ with $N=4096$.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\glspl{arp1} Duct Problem Removal of Ray Effect}
+  \begin{figure}[b]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/duct_org_log.png}
+      \subcaption{$N=16384$, $S_{8}$}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/duct_4096_p5_log.png}
+      \subcaption{$N=4096$, $P_{5}$}
+    \end{subfigure}
+    \caption{Log scale of \glspl{arp1} duct problem highlighting ray effects.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\glspl{arp} "Dog Leg" Problem}
+  \begin{figure}[b]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/dogleg_4096_disc.png}
+      \subcaption{Problem discretization}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/dogleg_4096_p1.png}
+      \subcaption{$P_{1}}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/dogleg_4096_p3.png}
+      \subcaption{$P_{3}$}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/dogleg_4096_p5.png}
+      \subcaption{$P_{5}$}
+    \end{subfigure}
+    \caption{Solutions of \glspl{arp} dog leg problems for varying $P_N$ with $N=4096}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\glspl{arp1} Dog Leg Problem Removal of Ray Effect}
+  \begin{figure}[b]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/dogleg_org_log.png}
+      \subcaption{$N=16384$, $S_{8}$}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=0.65\textwidth]{figures/sphere/dogleg_4096_p5_log.png}
+      \subcaption{$N=4096$, $P_{5}$}
+    \end{subfigure}
+    \caption{Log scale of \glspl{arp1} dog leg problem highlighting ray effects.}
   \end{figure}
 \end{frame}
