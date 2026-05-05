@@ -332,7 +332,6 @@ mesh_centroid = points.mean(axis=0)
 VACUUM_TAGS = {14, 15}
 REFLECT_TAGS = {13, 16}
 
-print("=== Boundary normal diagnostics ===")
 for edge, tag in zip(lines, line_phys):
     n1, n2 = edge
     p1, p2 = points[n1], points[n2]
@@ -340,7 +339,6 @@ for edge, tag in zip(lines, line_phys):
     edge_mid = 0.5 * (p1 + p2)
     normal = np.array([edge_vec[1], -edge_vec[0]])
     normal = normal / np.linalg.norm(normal)
-    print(f"tag={tag}  mid={edge_mid}  normal={normal}")
 
 for edge, tag in zip(lines, line_phys):
     if tag in REFLECT_TAGS:
